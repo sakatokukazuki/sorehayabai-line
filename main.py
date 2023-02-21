@@ -16,7 +16,7 @@ handler = WebhookHandler(os.environ["LINE_CHANNEL_SECRET"])
 # / にGETリクエストが来たときに呼ばれる関数
 @app.get("/")
 def home():
-    return {"message": "こんにちは、世界"}
+    return {"message": "それはやばい"}
 
 
 # /callback にPOSTリクエストが来たときに呼ばれる関数
@@ -44,5 +44,5 @@ def handle_message(event):
     # 返信する (リプライトークンを使用してテキストで返信する)
     line_bot_api.reply_message(
         event.reply_token,
-        TextSendMessage(text=message)
+        TextSendMessage(text="それはやばい")
     )
