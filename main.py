@@ -16,7 +16,7 @@ handler = WebhookHandler(os.environ["LINE_CHANNEL_SECRET"])
 # / にGETリクエストが来たときに呼ばれる関数
 @app.get("/")
 def home():
-    return {"message": "それはやばい"}
+    return {"message": "マクドナルド"}
 
 
 # /callback にPOSTリクエストが来たときに呼ばれる関数
