@@ -44,5 +44,5 @@ def handle_message(event):
     # 返信する (リプライトークンを使用してテキストで返信する)
     line_bot_api.reply_message(
         event.reply_token,
-        TextSendMessage(text="それはやばい")
+        TextSendMessage(text="マクドナルド")
     )
